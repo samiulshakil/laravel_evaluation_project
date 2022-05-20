@@ -107,6 +107,4 @@
         $('#datatable').DataTable();
     } );
 </script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
-<script src="https://cdn.jsdelivr.net/combine/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js,npm/sweetalert2@11.4.14"></script>
 @endpush

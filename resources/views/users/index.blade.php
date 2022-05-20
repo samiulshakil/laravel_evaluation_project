@@ -66,16 +66,13 @@
                                                     </td>
                                                     <td class="text-center">{{ $user->created_at->diffForHumans() }}</td>
                                                     <td class="text-center">
-                                                        <a class="btn btn-success btn-sm" href="{{ route('users.show',$user->id) }}"><i
-                                                            class="fas fa-eye"></i>
+                                                        <a class="btn btn-success btn-sm" href="{{ route('users.show',$user->id) }}">
                                                             <span>Show</span>
                                                         </a>
                                                         <a href="{{route('users.edit', $user->id)}}" class="btn btn-info btn-sm">
-                                                            <i class="fas fa-edit"></i>
                                                             <span>Edit</span>
                                                         </a>
                                                         <button type="button" class="btn btn-danger btn-sm" onclick="deleteData({{$user->id}})">
-                                                            <i class="fas fa-trash-alt"></i>
                                                             <span>Delete</span>
                                                         </button>
                                                         <form id="delete-form-{{$user->id}}" method="post" action="{{ route('users.destroy', $user->id) }}">
@@ -106,6 +103,4 @@
         $('#datatable').DataTable();
     } );
 </script>
-<script type="script/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
-<script type="script/javascript" src="https://cdn.jsdelivr.net/combine/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js,npm/sweetalert2@11.4.14"></script>
 @endpush

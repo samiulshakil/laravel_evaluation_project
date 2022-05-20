@@ -28,7 +28,7 @@ Route::get('/users', [App\Http\Controllers\UserController::class, 'index'])->nam
 Route::get('/users/{id}', [App\Http\Controllers\UserController::class, 'show'])->name('users.show');
 Route::get('/users/{id}/edit', [App\Http\Controllers\UserController::class, 'edit'])->name('users.edit');
 Route::post('/users/update', [App\Http\Controllers\UserController::class, 'update'])->name('users.update');
-Route::delete('/users/delete/{id}', [App\Http\Controllers\UserController::class, 'destroy'])->name('users.destroy');
+Route::delete('/users/destroy/{id}', [App\Http\Controllers\UserController::class, 'destroy'])->name('users.destroy');
 
 //products route 
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');
